@@ -1,0 +1,19 @@
+/*
+Aviles - Asturias
+Iván Vega García 
+tfno +34 666 91 14 85
+University Of Oviedo
+UO276670
+*/
+
+
+/*Specificity(0,0,1)*/
+body {font-family: 'Courier New', monospace}
+/*Specificity(0,0,1)*/
+body {background-color: #E2DCD6}
+/*Specificity(0,0,1)*/
+body {color: #294652}
+/*Specificity(0,0,1)*/
+header {background-color:#FF1A4C}
+/*Specificity(0,0,1) ambos*/
+h1, nav {color : #E2DCD6}
