@@ -10,19 +10,21 @@ content ="F1Desktop, F1, Formula 1, coches, pilotos, informacion, Yuki Tsunoda, 
 , Honda Formula Dream Project, Motopark, Jenzer Motorsport, Hitech Grand Prix
 , M2 Competition, Carlin, Scuderia AlphaTauri Honda, Scuderia AlphaTauri
 , Visa Cash App RB Formula One Team, pole, pit stop, rake, clasificacion
-, temporada" />
+, temporada" 
+/>
 <meta name ="viewport" content ="width=device-width, initial-scale=1.0" />
 <link rel="icon" type="image/x-icon" href="multimedia/imagenes/f1DesktopIcon_1.png" />
 <title>F1Desktop Piloto</title>
 <link rel="stylesheet" type="text/css" href="estilo/estilo.css" />
+<link rel="stylesheet" type="text/css" href="estilo/layout.css" />
 </head>
 <body>
 <!-- Datos con el contenido que aparece en el navegador -->
- <header>
-    <h1>F1Desktop</h1>
+<header>
+    <h1><a href = "index.html" title = "inicio_h1">F1Desktop</a></h1>
     <nav>
         <a href = "index.html" title = "inicio">Inicio</a>
-        <a href = "piloto.html" title = "piloto">Piloto</a>
+        <a href = "piloto.html" class="active" title = "piloto">Piloto</a>
         <a href = "noticias.html" title = "noticias">Noticias</a>
         <a href = "calendario.html" title = "calendario">Calendario</a>
         <a href = "meteorologia.html" title = "meteorologia">Meteorología</a>
@@ -31,6 +33,10 @@ content ="F1Desktop, F1, Formula 1, coches, pilotos, informacion, Yuki Tsunoda, 
         <a href = "juegos.html" title = "juegos">Juegos</a>
     </nav>
  </header>
+<p> Estás en: 
+    <a href="index.html" title="inicio_migas">Inicio</a>
+     >> Piloto
+</p>
 <main>
     <h2>Yuki Tsunoda</h2>
     <audio controls>
@@ -55,11 +61,11 @@ content ="F1Desktop, F1, Formula 1, coches, pilotos, informacion, Yuki Tsunoda, 
     <h4>Aficiones</h4>
     <p>
         El piloto nipón tiene más hobbies a parte de conducir. A 
-        continuación una lista con algunos de ellos. Si quieres ver una
-        entrevista más detallada pulsa 
+        continuación una lista con algunos de ellos. Pulsa
         <a href="https://www.elconfidencial.com/deportes/formula-1/2021-02-06/red-bull-marko-tsunoda-alphatauri_2938964/">
-            aquí.
+            aquí
         </a>
+        si quieres ver una entrevista más detallada.
     </p>
     <ul>
         <li>Cocinar</li>
@@ -82,11 +88,11 @@ content ="F1Desktop, F1, Formula 1, coches, pilotos, informacion, Yuki Tsunoda, 
     </section>
     <section>
     <h3>Carrera</h3>
-    <a href="https://es.wikipedia.org/wiki/Yuki_Tsunoda">
-        <p>
+    <p>
+        <a href="https://es.wikipedia.org/wiki/Yuki_Tsunoda">
             Toda la información obtenida de la pagina oficial de wikipedia de Yuki Tsunoda
-        </p>
-    </a>
+        </a>
+    </p>
     <h4>Equipos</h4>
     <ol>
         <li>Sutekina Racing Team </li>
@@ -126,26 +132,52 @@ content ="F1Desktop, F1, Formula 1, coches, pilotos, informacion, Yuki Tsunoda, 
             </li>
         </ol>
     
-        <h4>Resultados de la temporada anterior</h4>
+        <h4>Resultados de anteriores temporadas</h4>
         <table>
         <caption>Tabla de la temporada 2024</caption>
+        <thead>
+            <tr>
+                <th id="Equipo" scope="col">Equipo</th>
+                <th id="Puntos" scope="col">Puntos</th>
+                <th id="PosicionFinal" scope="col">Posición Final</th>
+                <th id="Poles" scope="col">Poles</th>
+                <th id="Victorias" scope="col">Victorias</th>
+                <th id="Podios" scope="col">Podios</th>
+            </tr>
+        </thead>
         <tbody>    
-        <tr>
-            <th id="Equipo" scope="col">Equipo</th>
-            <th id="Puntos" scope="col">Puntos</th>
-            <th id="PosicionFinal" scope="col">Posición Final</th>
-            <th id="Poles" scope="col">Poles</th>
-            <th id="Victorias" scope="col">Victorias</th>
-            <th id="Podios" scope="col">Podios</th>
-        </tr>
-        <tr>
-            <th id="RB" scope="row" headers="Equipo">Visa Cass App RB Formula One Team</th>
-            <td headers="RB Puntos">17</td>
-            <td headers="RB PosicionFinal">14º</td>
-            <td headers="RB Poles">0</td>
-            <td headers="RB Victorias">0</td>
-            <td headers="RB Podios">0</td>
-        </tr>
+            <tr>
+                <th id="RB" scope="row" headers="Equipo">Visa Cass App RB Formula One Team</th>
+                <td headers="RB Puntos" >17</td>
+                <td headers="RB PosicionFinal">14º</td>
+                <td headers="RB Poles">0</td>
+                <td headers="RB Victorias">0</td>
+                <td headers="RB Podios">0</td>
+            </tr>
+            <tr>
+                <th id="RB2" scope="row" headers="Equipo">Visa Cass App RB Formula One Team</th>
+                <td headers="RB2 Puntos" >17</td>
+                <td headers="RB2 PosicionFinal">14º</td>
+                <td headers="RB2 Poles">0</td>
+                <td headers="RB2 Victorias">0</td>
+                <td headers="RB2 Podios">0</td>
+            </tr>
+            <tr>
+                <th id="RB3" scope="row" headers="Equipo">Visa Cass App RB Formula One Team</th>
+                <td headers="RB3 Puntos" >17</td>
+                <td headers="RB3 PosicionFinal">14º</td>
+                <td headers="RB3 Poles">0</td>
+                <td headers="RB3 Victorias">0</td>
+                <td headers="RB3 Podios">0</td>
+            </tr>
+            <tr>
+                <th id="RB4" scope="row" headers="Equipo">Visa Cass App RB Formula One Team</th>
+                <td headers="RB4 Puntos" >17</td>
+                <td headers="RB4 PosicionFinal">14º</td>
+                <td headers="RB4 Poles">0</td>
+                <td headers="RB4 Victorias">0</td>
+                <td headers="RB4 Podios">0</td>
+            </tr>
         </tbody>
         </table>
     
@@ -154,6 +186,7 @@ content ="F1Desktop, F1, Formula 1, coches, pilotos, informacion, Yuki Tsunoda, 
         <source src="multimedia/videos/F1EyeCandy.mp4" type="video/mp4">
         <source src="multimedia/videos/F1EyeCandy.webm" type="video/webm">
     </video>
+    
     <p>
         Comenzó su carrera en 2005 a la edad de 4 años, cuando se 
         subió a un kart. En 2010 participó en la clase Junior del 
@@ -167,7 +200,10 @@ content ="F1Desktop, F1, Formula 1, coches, pilotos, informacion, Yuki Tsunoda, 
         Campeonato Japonés de Fórmula 4 en Suzuka, donde corrió
         para el Sutekina Racing Team. Inmediatamente terminó 
         segundo y cuarto en las carreras, convirtiéndose en el décimo 
-        sexto en el campeonato con 30 puntos. Permaneció activo en 
+        sexto en el campeonato con 30 puntos. 
+    </p>
+    <p>  
+        Permaneció activo en 
         este campeonato en 2017, pero cambió al equipo Honda Formula 
         Dream Project (Motopark Academy). Ganó tres carreras en el 
         Circuito Internacional de Okayama, el Circuito de Fuji y en 

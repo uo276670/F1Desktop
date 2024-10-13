@@ -1,19 +1,180 @@
-/*
-Aviles - Asturias
-Iván Vega García 
-tfno +34 666 91 14 85
-University Of Oviedo
-UO276670
+/*Author:
+    Aviles - Asturias
+    Iván Vega García 
+    tfno +34 666 91 14 85
+    University Of Oviedo
+    UO276670
+*/
+/*Color Palette:
+    #B30600 => Red
+    #FFFFFF => white
+    #15151E => Black
 */
 
+/* HEADER ---------------------------------- */
+/*Specificity(0,0,1)*/
+header {
+    background-color:#B30600;
+    color : #FFFFFF;
+    font-size: medium;
+    font-weight: bold;
+}
+/*Specificity(0,1,2)*/
+header a:link,
+header a:visited{
+    text-decoration-line: none;
+    color : #FFFFFF;
+}
+/*Specificity(0,1,2)*/
+header a:active,
+header a:focus,
+header a:hover
+{
+    background-color: #FFFFFF;
+    color:#B30600;
+}
 
+/* BREADCRUMS  ----------------------------- */
+/* Specificity(0,0,2) */
+body > p{
+    font-size: smaller;
+
+}
+/*Specificity(0,0,3)*/
+body > p > a{
+    color: #B30600;
+    text-decoration-line: underline;
+    outline-color: transparent;
+    
+}
+
+/* GENERAL HYPERLINKS ---------------------- */
+/* Specificity(0,1,1) */
+a:link{
+    color: #B30600;
+    text-decoration-line: underline;
+    outline-color: transparent;
+}
+/* Specificity(0,1,1) */
+a:visited {
+    color: #B30600;
+}
+/* Specificity(0,1,1) */
+a:focus,
+a:hover,
+a:active{
+    color: #FFFFFF;
+    background-color: #B30600;
+    text-decoration-line: none;
+}
+
+/* GENERAL BODY ---------------------------- */
 /*Specificity(0,0,1)*/
-body {font-family: 'Courier New', monospace}
+h2{
+    font-size: xx-large;  
+    color: #B30600;
+}
 /*Specificity(0,0,1)*/
-body {background-color: #E2DCD6}
+h3, h4{
+    font-size: larger;  
+    color: #B30600;
+}
 /*Specificity(0,0,1)*/
-body {color: #294652}
+body {
+    font-family: 'Verdana', sans-serif;
+    font-size: medium;
+    background-color: #FFFFFF;
+    color: #15151E;
+}
 /*Specificity(0,0,1)*/
-header {background-color:#FF1A4C}
-/*Specificity(0,0,1) ambos*/
-h1, nav {color : #E2DCD6}
+main{
+    margin: 2%;
+}
+
+/* MULTIMEDIA ------------------------------ */
+/*Specificity(0,0,1)*/
+video, picture, img{
+    width: max-content;
+    max-width: 100%;
+    height: auto;
+}
+
+/* LISTS ----------------------------------- */
+/*Specificity(0,0,1)*/
+ul{
+    list-style-type: square;
+    font-size: larger;
+}
+/*Specificity(0,0,1)*/
+ol{
+    font-size: larger;
+    font: bold;
+}
+/*Specificity(0,0,2)*/
+ol ul{
+    font-size: medium;
+    font: medium;
+    list-style-type: "★"; 
+}
+/*Specificity(0,0,1)*/
+dt{
+    font-weight: bold;
+    background-color: #15151E;
+    color: #FFFFFF;
+}
+
+/* TABLES ---------------------------------- */
+/*Specificity(0,0,1)*/
+table {
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+}
+/*Specificity(0,0,1)*/
+th, td{
+    padding: 1%;
+}
+/*Specificity(0,0,2)*/
+table caption{
+    color: #FFFFFF;
+    background-color: #B30600;
+    font-size: small;
+    text-align: center;
+    font-weight:  bold;
+}
+/*Specificity(0,0,2)*/
+table thead{
+    color: #FFFFFF;
+    background-color: #B30600;
+}
+/*Specificity(0,1,2)*/
+  thead th:nth-child(1) {
+    width: 25%;
+}
+  
+/*(0,1,2)*/
+thead th:nth-child(2), 
+thead th:nth-child(3),
+thead th:nth-child(4),
+thead th:nth-child(5),
+thead th:nth-child(6)
+{
+    width: 10%;
+}
+/*Specificity(0,0,2)*/
+tbody td {
+text-align: center;
+}
+/*Specificity(0,1,2)*/
+tbody tr:nth-child(odd) {
+background-color: #FFFFFF;
+}
+/*Specificity(0,1,2)*/
+tbody tr:nth-child(even) {
+background-color: #FFD1D3;
+}
+
+  
+  
+
+

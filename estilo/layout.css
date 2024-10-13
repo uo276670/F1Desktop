@@ -1,0 +1,36 @@
+/*Layout.css
+    CSS sheet regarding the behavious and display of the
+    elements on the header of the F1Desktop
+*/
+
+/*Specificity (0,0,1)*/
+header{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between;
+
+}
+/*Specificity (0,1,3)*/
+header > nav > a.active{
+    background-color: #FFFFFF;
+    color:#B30600;
+}
+
+/**/
+@media screen and (max-width: 465px){
+    /*Specificity (0,0,2)*/
+    body > p {
+        display: none;
+    }
+    /*Specificity (0,0,1)*/
+    header{
+        flex-direction: column;
+    }
+    /*Specificity (0,0,2)*/
+    header > nav{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
