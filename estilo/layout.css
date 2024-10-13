@@ -9,7 +9,15 @@ header{
     flex-direction: row;
     align-items: baseline;
     justify-content: space-between;
-
+    flex-wrap: wrap;
+}
+/*Specificity (0,0,2)*/
+header > nav{
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 1em;
+    flex-wrap: wrap;
 }
 /*Specificity (0,1,3)*/
 header > nav > a.active{
@@ -27,10 +35,9 @@ header > nav > a.active{
     header{
         flex-direction: column;
     }/*Redefinición de flex-direction*/
-    
+
     /*Specificity (0,0,2)*/
     header > nav{
-        display: flex;
         flex-direction: column;
     }
 }

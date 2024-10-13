@@ -174,7 +174,12 @@ tbody tr:nth-child(even) {
 background-color: #FFD1D3;
 }/*color heredado de body*/
 
-  
+/* FOOTER ---------------------------------- */
+/*Specificity(0,0,1)*/  
+footer{
+    background-color: #15151E;
+    color: #FFFFFF;
+}
   
 
 
