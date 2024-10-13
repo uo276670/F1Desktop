@@ -26,7 +26,8 @@ header > nav > a.active{
     /*Specificity (0,0,1)*/
     header{
         flex-direction: column;
-    }
+    }/*Redefinición de flex-direction*/
+    
     /*Specificity (0,0,2)*/
     header > nav{
         display: flex;
