@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE circuitos SYSTEM "circuito.dtd">
+<circuitos>
+    <circuito nombre="Losail" vueltas="22" largo="5.380m" anchura="12m" >
+        <fecha año="2024" mes="12" dia="1" hora="18:00"></fecha>
+        <ubicacion localidad="Lusail" país="Qatar">
+            <coordenadas longitud="25.48907386591285" latitud="51.45084416236202" altitud="13m"></coordenadas>
+        </ubicacion>
+        <referencias>
+            <referencia>https://es.motorsport.com/f1/news/horarios-carreras-formula1-2024/10559597/</referencia>
+            <referencia>https://en.wikipedia.org/wiki/Qatar_Grand_Prix</referencia>
+        </referencias>
+        <multimedia>
+            <fotografias>
+                <fotografia>losail_airview.jpg</fotografia>
+                <fotografia>losail_map.png</fotografia>
+                <fotografia>losail_stands.jpg</fotografia>
+            </fotografias>
+            <videos>
+                <video>Max_Verstappen_Pole_ 2023_Qatar.mp4</video>
+            </videos>
+        </multimedia>
+        <tramos unidad_medida="Metros">
+            <tramo sector="1" largo="10">
+                <coordenadas longitud="1" latitud="1" altitud="1"></coordenadas>
+            </tramo>
+            <tramo sector="2" largo="20">
+                <coordenadas longitud="2" latitud="2" altitud="2"></coordenadas>
+            </tramo>
+            <tramo sector="3" largo="30">
+                <coordenadas longitud="3" latitud="3" altitud="3"></coordenadas>
+            </tramo>
+        </tramos>
+    </circuito>
+</circuitos>
