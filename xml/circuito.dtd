@@ -1,5 +1,3 @@
-
-<!ELEMENT circuitos (circuito*)>
 <!ELEMENT circuito (fecha, ubicacion, referencias+, multimedia+, tramos )>
 
 <!ELEMENT fecha (#PCDATA)>
@@ -19,31 +17,43 @@
 <!ELEMENT videos (video*)>
 <!ELEMENT video (#PCDATA)>
 
+<!ATTLIST referencia
+    contenido CDATA #REQUIRED
+    url CDATA #REQUIRED
+>
+
+<!ATTLIST fotografia
+    url CDATA #REQUIRED
+    formato CDATA #REQUIRED
+    texto_alternativo CDATA #REQUIRED
+>
+<!ATTLIST video
+    url CDATA #REQUIRED
+    formato CDATA #REQUIRED
+    texto_alternativo CDATA #REQUIRED
+>
 <!ATTLIST circuito 
     nombre CDATA #REQUIRED
     vueltas CDATA #REQUIRED
     largo CDATA #REQUIRED
-    anchura CDATA #REQUIRED
+    ancho_medio CDATA #REQUIRED
 >
 <!ATTLIST fecha
-    año CDATA #REQUIRED
-    mes CDATA #REQUIRED
     dia CDATA #REQUIRED
     hora CDATA #REQUIRED
 >
 <!ATTLIST ubicacion
     localidad CDATA #REQUIRED
-    país CDATA #REQUIRED
+    pais CDATA #REQUIRED
 >
 <!ATTLIST coordenadas
     longitud CDATA #REQUIRED
     latitud CDATA #REQUIRED
     altitud CDATA #REQUIRED
 >
-<!ATTLIST tramos
-    unidad_medida CDATA #REQUIRED
->
 <!ATTLIST tramo
+    numero CDATA #REQUIRED
     sector CDATA #REQUIRED
     largo CDATA #REQUIRED
+    unidad_medida CDATA #REQUIRED
 >
