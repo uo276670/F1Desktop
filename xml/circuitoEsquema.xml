@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE circuito SYSTEM "circuito.dtd">
-<circuito nombre="Losail" vueltas="22" largo="5.380m" ancho_medio="12m" >
-    <fecha dia="1/12" hora="18:00"></fecha>
+<circuito 
+    xmlns="http://www.uniovi.es"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.uniovi.es circuito.xsd"
+    nombre="Losail" vueltas="22" largo="5.380" ancho_medio="12" >
+    <fecha dia="2024-12-01" hora="18:00:00"></fecha>
     <ubicacion localidad="Lusail" pais="Qatar">
-        <coordenadas longitud="25.48907386591285" latitud="51.45084416236202" altitud="13m"></coordenadas>
+        <coordenadas longitud="25.48907386591285" latitud="51.45084416236202" altitud="13"></coordenadas>
     </ubicacion>
     <referencias>
         <referencia 
@@ -52,7 +55,7 @@
         <tramo numero="02" sector="1" largo="59.23" unidad_medida="Metros">
             <coordenadas longitud="25.493293" latitud="51.447769" altitud="13"></coordenadas>
         </tramo>
-        <tramo numero="03" sector="1" largo="51,32" unidad_medida="Metros">
+        <tramo numero="03" sector="1" largo="51.32" unidad_medida="Metros">
             <coordenadas longitud="25.493351" latitud="51.448291" altitud="13"></coordenadas>
         </tramo>
         <tramo numero="04" sector="1" largo="200.99" unidad_medida="Metros">
