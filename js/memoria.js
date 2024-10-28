@@ -83,15 +83,16 @@ class Memoria{
 
     flipCard(memoria) {
         if(memoria.lockBoard == false 
-            & this.dataset.state !== "revealed"
-            & this.dataset.state !== "flip" ){
+            && this.dataset.state !== "revealed"
+            && this.dataset.state !== "flip" ){
             this.setAttribute("data-state", "flip");
             setTimeout(() => {
-                if(this.dataset.state === "flip"){
+                if(this.dataset.state==="flip" 
+                    && memory.secondCard === null){
                     this.removeAttribute("data-state");
                     memory.resetBoard();
                 }
-            }, 5000);
+            }, 4000);
 
             if (memoria.hasFlippedCard) {
                 memoria.lockBoard = true;
