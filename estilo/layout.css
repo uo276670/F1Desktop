@@ -11,6 +11,15 @@ header{
     justify-content: space-between;
     flex-wrap: wrap;
 }
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    margin: 0;
+    padding: 0;
+}
 /*Specificity (0,0,2)*/
 header > nav{
     display: flex; 

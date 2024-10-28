@@ -11,7 +11,6 @@
     #FFFFFF => White
     #15151E => Black
 */
-
 /* HEADER ---------------------------------- */
 /*Specificity(0,0,1)*/
 header {
@@ -33,7 +32,7 @@ header a:hover
 {
     background-color: #FFFFFF;
     color:#B30600;
-}/*background-color heredado de header
+}/*background-color heredado de header*/
 
 /* BREADCRUMS  ----------------------------- */
 /* Specificity(0,0,2) */

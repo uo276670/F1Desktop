@@ -8,9 +8,15 @@
 <meta name ="keywords" content ="F1, coches, carreras, circuitos, pilotos, juegos, videojuegos" />
 <meta name ="viewport" content ="width=device-width, initial-scale=1.0" />
 <link rel="icon" type="image/x-icon" href="multimedia/imagenes/f1DesktopIcon_1.png" />
-<title>F1Desktop Juegos</title>
+<title>F1Desktop Juegos: Juego de memoria</title>
 <link rel="stylesheet" type="text/css" href="estilo/estilo.css" />
 <link rel="stylesheet" type="text/css" href="estilo/layout.css" />
+
+<link rel="stylesheet" type="text/css" href="estilo/memoria.css" />
+<script src="js/memoria.js"></script>
+<script>
+    memory = new Memoria();
+</script>
 </head>
 <body>
 <!-- Datos con el contenido que aparece en el navegador -->
@@ -29,13 +35,22 @@
  </header>
 <p> Estás en: 
     <a href="index.html" title="inicio_migas">Inicio</a>
-     >> Juegos</p>
+     >> 
+    <a href="juegos.html" title="segundo_migas">Juegos</a>
+     >> Juego de memoria</p>
 <main>
     <h2>Selección de juegos de F1 para tu navegador</h2>
     <ul>
         <li><a href = "memoria.html" title = "memoria">Juego de memoria</a></li>
         <li><a href = "semaforo.html" title = "semaforo">Semáforo de reacción</a></li>
     </ul>
+    <section>
+        <h3>Juego de memoria</h3>
+        <script>
+            memory.createElements();
+            memory.addEventListeners();
+        </script>
+    </section>
 </main>
 <footer>
 </footer>
