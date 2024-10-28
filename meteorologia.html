@@ -11,6 +11,12 @@
 <title>F1Desktop Meteorología</title>
 <link rel="stylesheet" type="text/css" href="estilo/estilo.css" />
 <link rel="stylesheet" type="text/css" href="estilo/layout.css" />
+
+<script src="js/pais.js"></script>
+<script>
+    pais = new Pais("Qatar", "Doha", 2716391);
+    pais.setInfo(25.489217, 51.449572, 13, "Circuito de Losail", "Monarquía Absoluta", "Islam");
+</script>
 </head>
 <body>
 <!-- Datos con el contenido que aparece en el navegador -->
@@ -31,8 +37,17 @@
     <a href="index.html" title="inicio_migas">Inicio</a>
      >> Meteorología</p>
 <main>
-    <h2>Comprueba el clima esperado para las carreras</h2>
-    <p>En desarrollo</p>
+    <script>
+        document.write("<h2>Parte meteorológico de "+
+            pais.getCapital() + ", " + 
+            pais.getPais() + "</h2>")
+    </script>
+    <script>
+        document.write("<h3>Información general:</h3>" + 
+            "<p>"+ pais.getInfoGeneral() +"</p>"
+        )
+    </script>
+
 </main>
 <footer>
 </footer>
