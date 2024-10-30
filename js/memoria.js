@@ -81,26 +81,26 @@ class Memoria{
         this.resetBoard();
     }
 
-    flipCard(memoria) {
-        if(memoria.lockBoard == false 
+    flipCard(game) {
+        if(game.lockBoard == false 
             && this.dataset.state !== "revealed"
             && this.dataset.state !== "flip" ){
             this.setAttribute("data-state", "flip");
             setTimeout(() => {
                 if(this.dataset.state==="flip" 
-                    && memory.secondCard === null){
+                    && game.secondCard === null){
                     this.removeAttribute("data-state");
-                    memory.resetBoard();
+                    game.resetBoard();
                 }
             }, 4000);
 
-            if (memoria.hasFlippedCard) {
-                memoria.lockBoard = true;
-                memoria.secondCard = this;
-                memoria.checkForMatch();
+            if (game.hasFlippedCard) {
+                game.lockBoard = true;
+                game.secondCard = this;
+                game.checkForMatch();
             } else {
-                memoria.firstCard = this;
-                memoria.hasFlippedCard = true;
+                game.firstCard = this;
+                game.hasFlippedCard = true;
             }
         }
     }
